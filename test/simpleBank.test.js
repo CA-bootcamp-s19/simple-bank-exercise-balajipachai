@@ -102,7 +102,7 @@ contract('SimpleBank', function(accounts) {
 
     const accountAddress = result.logs[0].args.accountAddress;
     const newBalance = result.logs[0].args.newBalance.toNumber();
-    const withdrawAmount = result.logs[0].args.withdrawalAmount.toNumber();
+    const withdrawAmount = result.logs[0].args.withdrawAmount.toNumber();
 
     const expectedEventResult = {
       accountAddress: alice,
